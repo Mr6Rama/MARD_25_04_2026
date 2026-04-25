@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+<<<<<<< HEAD
 import { Almarai, Spectral, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -45,6 +46,22 @@ export default function RootLayout({
       className={`${almarai.variable} ${spectral.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-black">{children}</body>
+=======
+import "./globals.css";
+import { AppShell } from "@/components/layout/AppShell";
+
+export const metadata: Metadata = {
+  title: "ПирЛифт / Кадам Наставник",
+  description: "Футуристичная база для студенческого наставничества",
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="ru">
+      <body>
+        <AppShell>{children}</AppShell>
+      </body>
+>>>>>>> 078473e3bd9fa783777c0e85e195e0c823324cf0
     </html>
   );
 }

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-<<<<<<< HEAD
-import { Almarai, Spectral, Geist_Mono } from "next/font/google";
+import { Almarai, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const almarai = Almarai({
@@ -10,27 +9,20 @@ const almarai = Almarai({
   display: "swap",
 });
 
-const spectral = Spectral({
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  variable: "--font-spectral",
-  display: "swap",
-});
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Prisma — Your Life Navigation Engine",
+  title: "Prisma — Career Guidance Reimagined with AI",
   description:
-    "Prisma is an AI-powered system that guides you through career discovery, financial pathway planning, and real-world talent packaging — turning potential into structured opportunity.",
+    "Answer 4 questions. Get matched to careers, validate your fit, and receive your complete roadmap — universities, scholarships, internships, and a step-by-step action plan.",
   openGraph: {
-    title: "Prisma — Your Life Navigation Engine",
+    title: "Prisma — Career Guidance Reimagined with AI",
     description:
-      "AI-powered life navigation. Career mapping, financial clarity, and talent packaging — all in one structured system.",
+      "AI-powered career matching. Find your path in under 5 minutes.",
     type: "website",
   },
 };
@@ -43,25 +35,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${almarai.variable} ${spectral.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${almarai.variable} ${geistMono.variable}`}
     >
-      <body className="min-h-full flex flex-col bg-black">{children}</body>
-=======
-import "./globals.css";
-import { AppShell } from "@/components/layout/AppShell";
-
-export const metadata: Metadata = {
-  title: "ПирЛифт / Кадам Наставник",
-  description: "Футуристичная база для студенческого наставничества",
-};
-
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="ru">
-      <body>
-        <AppShell>{children}</AppShell>
+      <body className="min-h-[100dvh] bg-background text-foreground antialiased">
+        {children}
       </body>
->>>>>>> 078473e3bd9fa783777c0e85e195e0c823324cf0
     </html>
   );
 }

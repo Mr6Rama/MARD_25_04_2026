@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
+node_modules
+.pnp
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -12,61 +11,34 @@
 !.yarn/versions
 
 # testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-=======
-# dependencies
-node_modules
+coverage
 
 # next.js
 .next
 out
-.vercel
 
 # production
 dist
 build
 
-# env
-.env
-.env.*
+# misc / system
+.DS_Store
+Thumbs.db
+*.pem
 
-# logs
+# logs / debug
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# system
-.DS_Store
-Thumbs.db
+# env (secrets)
+.env*
+.env.local
+
+# vercel
+.vercel
 
 # editor
 .vscode
@@ -74,4 +46,4 @@ Thumbs.db
 
 # typescript
 *.tsbuildinfo
->>>>>>> 078473e3bd9fa783777c0e85e195e0c823324cf0
+next-env.d.ts

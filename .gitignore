@@ -38,7 +38,7 @@ pnpm-debug.log*
 .env.local
 
 # local agent/worktree state
-.claude/worktrees/
+
 
 # vercel
 .vercel

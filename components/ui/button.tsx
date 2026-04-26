@@ -1,7 +1,8 @@
 import Link from "next/link";
 import type { Route } from "next";
-import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
+
+import { cn } from "@/lib/utils";
 
 type ButtonProps = {
   href?: Route;
@@ -15,5 +16,18 @@ export function Button({ href, children, className }: ButtonProps) {
     className,
   );
 
-  return href ? <Link href={href} className={classes}>{children}</Link> : <button type="button" className={classes}>{children}</button>;
+  if (href) {
+    return (
+      <Link href={href} className={classes}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <button type="button" className={classes}>
+      {children}
+    </button>
+  );
 }
+

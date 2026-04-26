@@ -1,16 +1,11 @@
 {
-<<<<<<< HEAD
   "name": "mard",
-=======
-  "name": "peerlift-qadam-mentor",
->>>>>>> 078473e3bd9fa783777c0e85e195e0c823324cf0
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-<<<<<<< HEAD
     "lint": "eslint"
   },
   "dependencies": {
@@ -36,22 +31,5 @@
     "eslint-config-next": "16.2.4",
     "tailwindcss": "^4",
     "typescript": "^5"
-=======
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "^15.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.15.0",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.8.3"
->>>>>>> 078473e3bd9fa783777c0e85e195e0c823324cf0
   }
 }
